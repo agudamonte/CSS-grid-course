@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+body{
+  background-image: linear-gradient(to bottom, #02236d, #012662, #0a2857, #15294b, #1d293e);
+}
+
+:root {
+  --yellow-boquita: #F3B229;
+  --blue-boquita: #02236D;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+text-decoration: none;
+font-size: 3rem;
+color: var(--yellow-boquita);
+}
+
+main {
+  display: grid;
+  width: 100vw;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+/* INDEX Styles */
+.reto{
+  border: 1px solid var(--yellow-boquita);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-container .reto:hover{
+  background-color: whitesmoke;
+  border: var(--blue-boquita);
+  box-shadow: 1px 0px 6px whitesmoke;
+}
+
+/* RETO 1 styles */
+
+.main-container-reto1 {
+  display: grid;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(2, 200px);
+  grid-auto-flow: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item {
+  display: grid;
+  place-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.item:hover{
+  background-color: #003391;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.item p{
+  display: inline-block;
+  font-size: 4rem;
+
+}
+
+.item1, .item4 {
+  background: #F3B229;
+}
+.item2, .item5 {
+  background: #eddf4a;
+}
+.item3, .item6 {
+  background: #efce12;
+}
+
+.flaticon-002-twitter:before { content: "\f101"; }
+
+.primary-button {
+  border: 1px solid var(--yellow-boquita);
+  padding: 10px 20px;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+/* reto 2 */
+.main-reto2{
+  height: 100vh;
+}
+.main-container-reto2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  height: auto;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #38650A
+}
+
+.main-container-reto2 .item{
+  border-radius: 0px;
+  background-color: #A7D200;
+  place-items: end;
+}
+
+.main-container-reto2 .item div{
+  background-color: #61A91D;
+  height: 80px;
+  width: 40px;
+}
